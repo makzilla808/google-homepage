@@ -31,12 +31,19 @@
 }
 
 .signin {
+    font-weight: bold;
     background-color: rgb(66, 133, 244);
     color: white;
+    opacity: 0.9;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     border-radius: 2px;
+}
+
+.material-icons {
+    position: relative;
+    top: 7px;
 }
 
 html, body{
@@ -90,4 +97,22 @@ form {
     position: absolute;
     top: 250px;
     left: 415px;
+}
+
+button {
+    position: relative;
+    left: 90px;
+    font-size: 14px;
+    opacity: 0.7;
+    border-style: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 2px 10px 0px 0px;
+}
+
+button:hover {
+    border-style: solid;
+    border-color: #bbb9b9;
+    border-width: 0.5px;
+    box-shadow: 0px 0px 1px 0px;
 }
