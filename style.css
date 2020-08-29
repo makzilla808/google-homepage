@@ -1,3 +1,11 @@
+#page-container {
+    min-height: 90vh;
+    min-width: 90vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 55px;
+}
 
 .top-left {
     float: left;
@@ -7,10 +15,19 @@
     float: right;
 }
 
+.bottom-left {
+    float: left;
+    opacity: 0.6;
+}
+
+.bottom-right {
+    float: right;
+    opacity: 0.6;
+}
+
 .logo {
-    position: relative;
-    top: 144px;
-    left: 403px;
+    display: block;
+    margin: 150px auto;
 }
 
 .signin {
@@ -20,6 +37,11 @@
     text-align: center;
     text-decoration: none;
     border-radius: 2px;
+}
+
+html, body{
+    height: 100%;
+    position: relative;
 }
 
 a {
@@ -44,18 +66,28 @@ li {
     padding: 0px 0px 0px 15px;
 }
 
-input {
-    position: relative;
-    top: 175px;
-    left: 440px;
-    padding: 13px;
-    width: 455px;
-    border-color: rgb(219, 219, 219);
-    border-radius: 24px;
-    border-width: thin;
-    border-style: solid;
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #e7e7e7;
 }
 
-button {
-    
+input {
+    width: 440px;
+    padding: 14px;
+    margin: 16px 0px 24px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c4c2c2;  
+    border-radius: 25px;
+}
+
+form {
+    position: absolute;
+    top: 250px;
+    left: 415px;
 }
