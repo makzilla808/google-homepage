@@ -1,18 +1,28 @@
 #page-container {
     min-height: 90vh;
     min-width: 90vh;
-    overflow: hidden;
-    display: block;
+    overflow: hidden;       
     position: relative;
     padding-bottom: 55px;
 }
 
+#search {
+    background-image: url(https://tr.rbxcdn.com/3873de8fcac7ea973d37b9e52dd868c7/420/420/Decal/Png), url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png);
+    background-repeat: no-repeat;
+    background-position: left 12px center, right 20px center;
+    background-size: 5%, 3%;
+}
+
 .top-left {
     float: left;
+    opacity: 0.7;
 }
 
 .top-right {
     float: right;
+    /* opacity for this class is in the element 
+    I could not figure out how to not show the
+    opacity for the sign in button */
 }
 
 .bottom-left {
@@ -32,9 +42,8 @@
 
 .signin {
     font-weight: bold;
-    background-color: rgb(66, 133, 244);
+    background-color: #4387fd;
     color: white;
-    opacity: 0.9;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
@@ -44,11 +53,6 @@
 .material-icons {
     position: relative;
     top: 7px;
-}
-
-html, body{
-    height: 100%;
-    position: relative;
 }
 
 a {
@@ -65,12 +69,13 @@ a:hover{
 ul {
     list-style-type: none;
     position: relative;
+    top: 2px;
     right: 40px;
 }
 
 li {
     display: inline;
-    padding: 0px 0px 0px 15px;
+    padding: 6px 0px 0px 16px;
 }
 
 footer {
@@ -89,8 +94,16 @@ input {
     margin: 16px 0px 24px 0px;
     border-style: solid;
     border-width: 1px;
-    border-color: #c4c2c2;  
+    border-color: #e0dfdfbe;  
     border-radius: 25px;
+    transition: box shadow .3s;
+
+}
+
+
+input:hover {
+    box-shadow: 0 0 8px;
+    color: rgb(33, 33,33,.2);
 }
 
 form {
@@ -101,7 +114,9 @@ form {
 
 button {
     position: relative;
-    left: 90px;
+    top: 3px;
+    left: 87px;
+    text-align: center;
     font-size: 14px;
     opacity: 0.7;
     border-style: none;
@@ -115,4 +130,8 @@ button:hover {
     border-color: #bbb9b9;
     border-width: 0.5px;
     box-shadow: 0px 0px 1px 0px;
+}
+
+body {
+    margin: 0px;
 }
